@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../scripts/navbar.js"></script>
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="navBar-left">
+                <a id="logo" href="">Richard Meng</a>
+            </div>
+
+            <div class="navBar-right">
+                <a href="javascript:void(0);" class="icon" id="responsive-icon" aria-label="Toggle menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <div class="navBar-items">
+                    <a href="#About">About</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Experience">Experience</a>
+                    <div class="socials">
+                        <a target="_blank" href="https://github.com/RichardM0"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hamburger" class="hamburger" aria-hidden="true">
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Experience">Experience</a>
+            <div class="socials">
+                <a target="_blank" href="https://github.com/RichardM0"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="container content">
+            <div class="row intro-row">
+                <div class="col-md-6">
+                    <img class="intro-img" src="../images/intro.jpg" alt="Intro Image">
+                </div>
+                <div class="col-md-6 intro-description">
+                    <h1 class="intro-head">Hi, I'm <span style="color:rgb(89, 3, 145)">Richard</span></h1>
+                    <p class="intro-text">
+                        a first year at 
+                        <span class="uw-text">University of Waterloo</span>
+                        <br>
+                        studying Computing + Financial Management
+                        <br>
+                        (CS+Finance)
+                    </p>
+                </div>
+            </div>
+            <div id="Projects" class="section-divider"><h1 style="font-weight:bold;">Projects</h1></div>
+            <div class="row project-row">
+                <div class="col-md-6 project-holder project-desc">
+                    <div class="project-content">
+                        <a target="_blank" class="project-link" href="https://github.com/RichardM0/Robo-Advisor"><h1 class="project-label">Robo Advisor</h1></a>
+                        <h4 class="project-deps">python, numpy, pandas, yFinance, matplotlib, scipy </h4>
+                        <p class="project-text">
+                            A pipeline built in python that inputs a list of tickers, and filters them based on trading volumes, currencies, and valid listing.
+                            <br>
+                            Uses statistics like Alpha, Beta, and Sharpe Ratios to pick optimal stocks
+                            <br>
+                            Builds an optimal portfolio, starting with $1 million CAD initial investment, based on optimal returns over the S&P 500 index
+                            <br>
+                            Achieved a +1.70% return over the S&P 500 index in December 2025 Alone
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 project-holder">
+                    <div class="project-content">
+                        <a target="_blank" href="https://github.com/RichardM0/Robo-Advisor"><img class="project-img" src="../images/stocktracker.png" alt="Project Image"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
