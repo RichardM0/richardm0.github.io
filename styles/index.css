@@ -128,8 +128,9 @@ body{
 
 .project-deps{
     font-style:italic;
-    border-bottom:#000000 1px solid;
-    width:max-content;
+    width:100%;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
 }
 
 .project-text{
@@ -168,8 +169,5 @@ body{
     }
     .project-row{
         display:block;
-    }
-    .project-deps{
-        font-size:1rem;
     }
 }
