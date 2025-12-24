@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('hamburger');
     const logo = document.getElementById('logo');
 
+    // Handle hash on page load - scroll to section and remove hash
+    if (window.location.hash) {
+        const hash = window.location.hash;
+        const target = document.querySelector(hash);
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                window.history.replaceState(null, null, window.location.pathname);
+            }, 100);
+        }
+    }
+
     if (toggle && menu) {
         toggle.addEventListener('click', function (e) {
             e.preventDefault();
@@ -36,8 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (logo) {
         logo.addEventListener('click', function (e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/')) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         });
     }
 

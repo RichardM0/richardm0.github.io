@@ -87,12 +87,12 @@ body{
 }
 
 
-.project-holder{
+.project-holder, .experience-holder{
     padding:15px;
     flex:1;
 }
 
-.project-row{
+.section-row{
     display:flex;
 }
 .project-content{
@@ -133,7 +133,7 @@ body{
     overflow-wrap:break-word;
 }
 
-.project-text{
+.project-text, .experience-text{
     font-size:var(--small-caption);
 }
 
@@ -158,6 +158,19 @@ body{
     width:100%;
 }
 
+.experience-holder{
+    width:100%;
+}
+
+.experience-label{
+    font-weight:bold;
+}
+
+.experience-description{
+    font-style:italic;
+}
+
+
 @media (max-width: 995px) {
     .intro-description {
         display:flex;
@@ -167,7 +180,7 @@ body{
         height:min-content;
         aspect-ratio:0;
     }
-    .project-row{
+    .section-row{
         display:block;
     }
     .section-divider{
