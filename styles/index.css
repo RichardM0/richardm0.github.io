@@ -94,6 +94,7 @@ body{
 
 .section-row{
     display:flex;
+    margin-bottom:20vh;
 }
 .project-content{
     display:flex;
@@ -126,12 +127,32 @@ body{
     color:var(--accent-color);
 }
 
-.project-deps{
+.project-highlight, .project-dep{
+    border-radius:15px;
+    border: 1.5px solid var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(239, 211, 239);
+    padding:2px 8px;
+}
+
+.project-highlight{
+    font-size:var(--med-caption);
+    border: 2px solid rgb(5, 146, 5);
+    background-color:rgb(202, 249, 202);
+}
+
+.project-deps, .project-highlights{
     font-style:italic;
-    width:100%;
+    width:max-content;
     word-wrap:break-word;
     overflow-wrap:break-word;
-}
+    display:flex;
+    flex-direction:row;
+    gap:2px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+
+} 
 
 .project-text, .experience-text{
     font-size:var(--small-caption);
