@@ -1,249 +1,248 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="scripts/navbar.js"></script>
-    </head>
-    <body>
-        <div class="navBar">
-            <div class="navBar-left">
-                <a id="logo" href="index.html">Richard Meng</a>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Richard M. | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orbit" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
-            <div class="navBar-right">
-                <a href="javascript:void(0);" class="icon" id="responsive-icon" aria-label="Toggle menu">
-                    <i class="fa fa-bars"></i>
-                </a>
+    <header class="hero" id="top">
+      <nav class="nav">
+        <div class="logo">RM</div>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="nav-cta" href="#contact">Let's Connect</a>
+      </nav>
 
-                <div class="navBar-items">
-                    <a href="about.html">About</a>
-                    <a href="#Projects">Projects</a>
-                    <a href="#Experience">Experience</a>
-                    <a href="#Connect">Connect</a>
-                    <div class="socials">
-                        <a target="_blank" href="https://github.com/RichardM0"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Winter 2027 Internship Search</p>
+          <h1>
+            CS + Finance student building data-driven edge.
+          </h1>
+          <p class="lead">
+            First-year CS + Finance student at the University of Waterloo interested in
+            software, Quant, AI, ML, and data science. 
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button ghost" href="#experience">See Experience</a>
+          </div>
+          <div class="hero-tags">
+            <span>Software</span>
+            <span>Quant</span>
+            <span>AI</span>
+            <span>ML</span>
+            <span>Data Science</span>
+            <span>FinTech</span>
+          </div>
         </div>
 
-        <div id="hamburger" class="hamburger" aria-hidden="true">
-            <a href="about.html">About</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Experience">Experience</a>
-            <a href="#Connect">Connect</a>
-            <div class="socials">
-                <a target="_blank" href="https://github.com/RichardM0"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-top">
+              <p class="label">Current Focus</p>
+              <div class="pulse"></div>
             </div>
+            <h3>Exploring market signals with modern ML.</h3>
+            <p>
+              Placeholder for a short snapshot: highlight a research theme,
+              class project, or competition result.
+            </p>
+            <div class="hero-card-stats">
+              <div>
+                <p class="stat">3+</p>
+                <p class="stat-label">Projects</p>
+              </div>
+              <div>
+                <p class="stat">5</p>
+                <p class="stat-label">Fields of Interest</p>
+              </div>
+              <div>
+                <p class="stat">2027</p>
+                <p class="stat-label">Target Term</p>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <span>Resume PDF (placeholder)</span>
+              <a href="Richard_s_Resume__Tech_.pdf" target="_blank" rel="noreferrer">Open</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </header>
 
-        <div class="container content">
-            <div id="About" class="row intro-row">
-                <div class="col-md-6">
-                    <img class="intro-img" src="images/intro.jpg" alt="Intro Image">
-                </div>
-                <div class="col-md-6 intro-description">
-                    <h1 class="intro-head">Hi, I'm <span style="color:rgb(89, 3, 145)">Richard</span></h1>
-                    <p class="intro-text">
-                        a first year at 
-                        <span class="uw-text">University of Waterloo</span>
-                        <br>
-                        studying Computing + Financial Management
-                        <br>
-                        (CS+Finance)
-                    </p>
-                </div>
-            </div>
-            <div id="Projects" class="section-divider"><h1 style="font-weight:bold;">Projects</h1></div>
-            <div class="row section-row">
-                <div class="col-md-6 project-holder project-desc">
-                    <div class="project-content">
-                        <a target="_blank" class="project-link" href="https://github.com/RichardM0/Robo-Advisor"><h1 class="project-label">Robo Advisor</h1></a>
-                        <div class="project-highlights">
-                            <div class="project-highlight">
-                                2.48% Return
-                            </div>
-                            <div class="project-highlight">
-                                +1.70% on S&P 500
-                            </div>
-                        </div>
-                        <div class="project-deps">
-                            <div class="project-dep">
-                                Python
-                            </div>
-                            <div class="project-dep">
-                                NumPy
-                            </div>
-                            <div class="project-dep">
-                                pandas
-                            </div>
-                            <div class="project-dep">
-                                yfinance
-                            </div>
-                            <div class="project-dep">
-                                Matplotlib
-                            </div>
-                            <div class="project-dep">
-                                SciPy
-                            </div>
-                        </div>
-                        <p class="project-text">
-                            A pipeline built in python that inputs a list of tickers, and filters them based on trading volumes, currencies, and valid listing.
-                            <br>
-                            Uses statistics like Alpha, Beta, and Sharpe Ratios to pick optimal stocks
-                            <br>
-                            Builds an optimal portfolio, starting with $1 million CAD initial investment, based on optimal returns over the S&P 500 index
-                            <br>
-                            Achieved a +1.70% return over the S&P 500 index in December 2025 Alone
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 project-holder">
-                    <div class="project-content">
-                        <a target="_blank" href="https://github.com/RichardM0/Robo-Advisor"><img class="project-img" src="images/stocktracker.png" alt="Project Image"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row section-row">
-                <div class="col-md-6 project-holder">
-                    <div class="project-content">
-                        <a target="_blank" href="https://reelsense.streamlit.app"><img class="project-img" src="images/reelsense.png" alt="Project Image"></a>
-                    </div>
-                </div>
-                <div class="col-md-6 project-holder project-desc">
-                    <div class="project-content">
-                        <a target="_blank" class="project-link" href="https://reelsense.streamlit.app"><h1 class="project-label">ReelSense (In Development)</h1></a>
-                        <div class="project-highlights">
-                            <div class="project-highlight">
-                                TFIDF Vectorization
-                            </div>
-                            <div class="project-highlight">
-                                Cosine Similarity
-                            </div>
-                        </div>
-                        <div class="project-deps">
-                            <div class="project-dep">
-                                Python
-                            </div>
-                            <div class="project-dep">
-                                NumPy
-                            </div>
-                            <div class="project-dep">
-                                pandas
-                            </div>
-                            <div class="project-dep">
-                                SciKit-learn
-                            </div>
-                            <div class="project-dep">
-                                Streamlit
-                            </div>
-                        </div>
-                        <p class="project-text">
-                            A movie recommender system that uses TFIDF vectorization and cosine similarity to recommend movies based on plot descriptions.
-                            <br>
-                            Uses TMDB API to fetch movie data and display posters in a dynamic, interactive UI built with Streamlit.
-                            <br>
-                            Users can search a movie and find similar movies, as well as find similar movies to all previously liked movies
-                            <br>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row section-row">
-                <div class="col-md-6 project-holder project-desc">
-                    <div class="project-content">
-                        <a target="_blank" class="project-link" href="https://github.com/RichardM0/stock-assistant"><h1 class="project-label">MeRich Stock Analyzer (W.I.P)</h1></a>
-                        <div class="project-highlights">
-                            <div class="project-highlight">
-                                Interactive 
-                            </div>
-                            <div class="project-highlight">
-                                Visualize Stock
-                            </div>
-                            <div class="project-highlight">
-                                Stock Metrics
-                            </div>
-                        </div>
-                        <div class="project-deps">
-                            <div class="project-dep">
-                                Python
-                            </div>
-                            <div class="project-dep">
-                                NumPy
-                            </div>
-                            <div class="project-dep">
-                                pandas
-                            </div>
-                            <div class="project-dep">
-                                yfinance
-                            </div>
-                            <div class="project-dep">
-                                Plotly
-                            </div>
-                            <div class="project-dep">
-                                Flask
-                            </div>
-                        </div>
-                        <p class="project-text">
-                            A Flask application built to visualize a stock of the user's choosing
-                            <br>
-                            Reflects the stock performance, its metrics (volatility/risk, Alpha, Beta, Sharpe Ratio, financial ratios, etc.)
-                            <br>
-                            Grades the current stock out of 10 based on its metrics and how well it's doing.
-                            <br>
-                            Provides a Buyer Analysis based off the rating out of 10, as well as professional buyer analysis.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 project-holder">
-                    <div class="project-content">
-                        <a target="_blank" href="https://github.com/RichardM0/stock-assistant"><img class="project-img" src="images/FullLogo.png" alt="Project Image"></a>
-                    </div>
-                </div>
-            </div>
-            <div id="Experience" class="section-divider"><h1 style="font-weight:bold;">Experience</h1></div>
-            <div class="row section-row">
-                <div class="cold-md-6 experience-holder">
-                    <h1 class="experience-label">Peer Tutor</h1>
-                    <h5 class="experience-description">Toronto District School Board 
-                        <br>(November 2022 -- June 2025)</h5>
-                    <p class="experience-text">
-                        Tutored high school in students like Math (Including AP), Science, and Computer Science
-                        <br>
-                        Helped students develop projects and debug projects in Computer Science, and understand content in all classes
-                        <br>
-                        Developed communication and interpersonal skills by working with a diverse range of students and learning styles
-                        <br>
-                        Improved grade averages of students tutored, some from 70s to mid 80s.
-                    </p>
-                </div>
-                <div class="cold-md-6 experience-holder">
-                    <h1 class="experience-label">Software + Game Developer</h1>
-                    <h5 class="experience-description">No Fuss Tutors
-                        <br>(June 2024 -- September 2024)</h5>
-                    <p class="experience-text">
-                        Worked as a software and game developer for a tutoring startup
-                        <br>
-                        Used React, TypeScript, Konva.js, Git, and Github to develop an interactive web-based educational dashboard
-                        <br>
-                        Worked on game-based learning modules to help students learn math and language concepts through interactive games
-                        <br>
-                        Used by hundreds of students to assist with elementary-level learning
-                    </p>
-                </div>
-            </div>
-
-
+    <main>
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
         </div>
-    </body>
+        <div class="timeline">
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <span>No Fuss Tutors</span>
+              <span>June 2024 - September 2024</span>
+            </div>
+            <h3>Co-op Software Developer</h3>
+            <ul>
+              <li>Built and shipped interactive educational games used by 500+ students using React and Konva</li>
+              <li>Collaborated in a fast-paced 5-person startup team environment using Git/GitHub for version control</li>
+              <li>POptimized UI and game logic to reduce load/runtime by 2-3 seconds, improving responsiveness for student</li>
+            </ul>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <span>Toronto District School Board</span>
+              <span>November 2022 - July 2025</span>
+            </div>
+            <h3>Tutor</h3>
+            <ul>
+              <li> Raised student averages through structured coaching and personalized feedback from around 70% to over 85%</li>
+              <li> Coordinated math and data structure lessons for 10 students, improving independent problem-solving skills </li>
+              <li> Adapted real-time teaching strategies to meet diverse learning needs, reinforcing leadership and communication skills</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading">
+          <h2>Education</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <span>University of Waterloo</span>
+              <span>2025 - 2030 (Expected)</span>
+            </div>
+            <h3>Computing & Financial Management (Honours, Co-op)</h3>
+            <ul>
+              <li>GPA: 3.9 / 4.0</li>
+              <li>Relevant coursework: Linear Algebra, Calculus I/II, Data Structures & Algorithms, Financial Data Analysis</li>
+              <li>Honors / Awards: President's Scholarship ($4,000)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <p>Hands-on builds</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/routevision.png" alt="RouteVision tracking preview" />
+            </div>
+            <div class="project-body">
+              <h3>NFL Analytics Tracker</h3>
+              <p>
+                Trained AI Computer-vision model, tracking NFL footage and providing
+                live feedbacks for receivers and quarterbacks.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>ML</span>
+                <span>Computer Vision</span>
+              </div>
+              <a href="https://devpost.com/software/routevision?_gl=1*ag73tq*_gcl_au*MTIyNzQ3NDI5OS4xNzcwNDIzMTIx*_ga*MTg1OTIwOTA4NC4xNzcwNDIzMTIx*_ga_0YHJK3Y10M*czE3Nzc5OTMwMDkkbzIxJGcxJHQxNzc3OTkzMDIwJGo0OSRsMCRoMA.." class="project-link">View case study</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/roboadvisor.png" alt="Robo-Advisor interface preview" />
+            </div>
+            <div class="project-body">
+              <h3>Robo-Advisor</h3>
+              <p>
+                Creates an optimized portfolio of 10-25 stocks from a
+                diverse universe of stocks, customized to the user's choosing
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Jupyter Notebook</span>
+                <span>yFinance</span>
+              </div>
+              <a href="https://github.com/RichardM0/Robo-Advisor/tree/main" class="project-link">View case study</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/reelsense.png" alt="ReelSense recommendations preview" />
+            </div>
+            <div class="project-body">
+              <h3>ReelSense</h3>
+              <p>
+                Personalized movie recommendation web application that uses 
+                moods, themes, genres, and previously liked movies.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>scikit-learn</span>
+                <span>Vectorization</span>
+              </div>
+              <a href="https://github.com/RichardM0/ReelSense" class="project-link">View case study</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <h2>Let's Build Something</h2>
+          <p>Open to Winter 2027 internships</p>
+        </div>
+        <div class="contact-card">
+          <div>
+            <h3>Contact</h3>
+            <div class="contact-links">
+              <a class="contact-icon" href="mailto:r23meng@uwaterloo.ca" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v.2l8 5.4 8-5.4V8H4zm16 10V10.3l-8 5.4-8-5.4V18h16z" />
+                </svg>
+                <span class="sr-only">Email</span>
+              </a>
+              <a class="contact-icon" href="https://www.linkedin.com/in/richard-meng-b25b4734b/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M6.94 7.5a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM5 9h3.9v11H5V9zm6.5 0h3.7v1.5h.1c.5-.9 1.8-1.8 3.7-1.8 3.9 0 4.6 2.4 4.6 5.6V20h-3.9v-4.7c0-1.1 0-2.6-1.8-2.6-1.8 0-2.1 1.3-2.1 2.5V20h-3.9V9z" />
+                </svg>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+              <a class="contact-icon" href="https://github.com/RichardM0" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2.25c-5.38 0-9.75 4.37-9.75 9.75 0 4.3 2.8 7.94 6.68 9.23.49.09.67-.21.67-.47 0-.23-.01-1-.01-1.82-2.72.59-3.29-1.16-3.29-1.16-.45-1.13-1.09-1.43-1.09-1.43-.89-.6.07-.59.07-.59 1 .07 1.52 1.02 1.52 1.02.88 1.52 2.3 1.08 2.86.82.09-.65.35-1.08.63-1.33-2.17-.25-4.45-1.08-4.45-4.82 0-1.06.38-1.92 1.02-2.6-.1-.25-.44-1.28.1-2.67 0 0 .82-.26 2.7 1a9.3 9.3 0 0 1 4.92 0c1.88-1.26 2.7-1 2.7-1 .54 1.39.2 2.42.1 2.67.63.68 1.02 1.54 1.02 2.6 0 3.75-2.29 4.57-4.47 4.82.36.3.68.9.68 1.82 0 1.31-.01 2.36-.01 2.68 0 .26.18.56.68.46A9.76 9.76 0 0 0 21.75 12c0-5.38-4.37-9.75-9.75-9.75z" />
+                </svg>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3>Availability</h3>
+            <p>Location: Open to relocation </p>
+            <p>Term: Winter 2027</p>
+            <p>Interests: Software, Data Science, AI, ML, FinTech, Quant</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
